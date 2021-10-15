@@ -2,7 +2,7 @@
     "name": "Remote Pi Workspace",
     "dockerFile": "Dockerfile",
     "workspaceFolder": "/workspace",
-    "workspaceMount": "source=/home/pi,target=/workspace,type=bind,consistency=cached",
+    "workspaceMount": "source=/home/pi/Projects,target=/workspace,type=bind,consistency=cached",
     // Implementing DIND (Docker in Docker)
     "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
     //"appPort": [5000], // only exposed locally on the machine with 127.0.0.1
